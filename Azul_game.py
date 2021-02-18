@@ -319,8 +319,10 @@ class Azul_game():
         return
 
     def is_game_done(self):
-        #controlla la board p1
-        if self.is_turn_done():
+        #controlla che il turno sia finito
+        self.is_turn_done()
+        if self.is_done_phase::
+            #controlla la board p1
             for row in self.board_p1:
                 completed_tiles_in_a_row = 0
                 for tile in row:
